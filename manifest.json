@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "SpringerNature Widget",
+  "description": "Demo",
+  "version": "1.0",
+
+
+  "permissions": [
+    "tabs", "https://www.google.de/*"
+  ],
+  "content_scripts": [
+  {
+    "matches": ["https://www.google.de/*"],
+    "js": ["jquery-3.2.1.min.js", "myscript.js"]
+  }
+  ]
+}
